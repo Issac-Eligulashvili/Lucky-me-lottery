@@ -37,5 +37,11 @@ displayNames();
 
 document.querySelector("#addNameBtn").addEventListener("click", addName);
 document.querySelector("#pickRandomBtn").addEventListener("click", pickRandomName);
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
+      addName();
+
+  }
+})
 
 
